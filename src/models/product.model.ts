@@ -15,8 +15,13 @@ const ProductSchema: Schema = new Schema({
     stock: { type: Number, required: true },
     price: { type: Number, required: true },
     imageUrl: { type: String, required: true },
-    category: { type: mongoose.Types.ObjectId, ref:"Category", required: true },
-}, {timestamps: true},
+    category: {
+        type: mongoose.Types.ObjectId,
+        ref: "Category",
+        required: true
+    },
+},
+    { timestamps: true },
 );
 
 export default mongoose.model<IProduct>("Product", ProductSchema);
