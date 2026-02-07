@@ -2,7 +2,7 @@
   "name": "sporton-be",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.ts",
   "scripts": {
     "dev": "nodemon src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
